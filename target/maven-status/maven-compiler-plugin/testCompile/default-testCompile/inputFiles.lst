@@ -1,0 +1,17 @@
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\config\PropertyReader.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\pages\AssignLeaveForPastDates.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\pages\ChangePasswordPage.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\pages\DeletionEducationRecord.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\pages\DisplaySugestionSReview.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\pages\LoginPage.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\pages\TerminationConfirmation.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\runners\TestRunner.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\StepDefinition\AssignLeaveForPastDatesSteps.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\StepDefinition\ChangePasswordSteps.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\StepDefinition\DeletionEducationRecordSteps.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\StepDefinition\DisplaySugestionSReviewSteps.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\StepDefinition\Hooks.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\StepDefinition\LoginPageSteps.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\StepDefinition\TerminationConfirmationSteps.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\utilis\DriverManager.java
+C:\Users\cpercic\IdeaProjects\OrangeHRMPlaywrights\src\test\java\utilis\UIActions.java
