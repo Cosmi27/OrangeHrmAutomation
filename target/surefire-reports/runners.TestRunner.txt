@@ -1,0 +1,189 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 2, Time elapsed: 14.81 s <<< FAILURE! -- in runners.TestRunner
+Examples.Example #1.1 -- Time elapsed: 14.64 s <<< ERROR!
+com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\utils\isomorphic\stackTrace.js:36:17)
+    at LongStandingScope._race (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\utils\isomorphic\manualPromise.js:89:52)
+    at LongStandingScope.race (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\utils\isomorphic\manualPromise.js:82:17)
+    at ElementHandleDispatcher._handleCommand (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:98:36)
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - performing click action
+-     - click action done
+-     - waiting for scheduled navigations to finish
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.ElementHandleImpl.clickImpl(ElementHandleImpl.java:144)
+	at com.microsoft.playwright.impl.ElementHandleImpl.lambda$click$6(ElementHandleImpl.java:136)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.ElementHandleImpl.click(ElementHandleImpl.java:136)
+	at com.microsoft.playwright.ElementHandle.click(ElementHandle.java:1343)
+	at utilis.UIActions.waitAndClick(UIActions.java:14)
+	at pages.ChangePasswordPage.open(ChangePasswordPage.java:18)
+	at StepDefinition.ChangePasswordSteps.userIsOnTheChangePasswordPage(ChangePasswordSteps.java:15)
+	at ✽.the user is on the Change password page(classpath:features/ChangePassword.feature:4)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\utils\isomorphic\stackTrace.js:36:17)
+    at LongStandingScope._race (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\utils\isomorphic\manualPromise.js:89:52)
+    at LongStandingScope.race (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\utils\isomorphic\manualPromise.js:82:17)
+    at ElementHandleDispatcher._handleCommand (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:98:36)
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:366:39)
+}
+Call log:
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - performing click action
+-     - click action done
+-     - waiting for scheduled navigations to finish
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 14 more
+
+The user can delete an education record from the Qualifications section.Deleting an education record from the Qualifications section -- Time elapsed: 0 s <<< ERROR!
+com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:283:44)
+    at transport.onmessage (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\utils\pipeTransport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$47(PageImpl.java:943)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:943)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at pages.LoginPage.login(LoginPage.java:18)
+	at pages.DeletionEducationRecord.open(DeletionEducationRecord.java:17)
+	at StepDefinition.DeletionEducationRecordSteps.userIsLoggedIntoOrangeHRM(DeletionEducationRecordSteps.java:15)
+	at ✽.the user is logged into OrangeHRM(classpath:features/DeletionEducationRecord.feature:5)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:283:44)
+    at transport.onmessage (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\utils\pipeTransport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 13 more
+
+Examples.Example #1.1 -- Time elapsed: 0.003 s <<< ERROR!
+com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:283:44)
+    at transport.onmessage (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\utils\pipeTransport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$47(PageImpl.java:943)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:943)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at pages.LoginPage.login(LoginPage.java:18)
+	at pages.DisplaySugestionSReview.open(DisplaySugestionSReview.java:16)
+	at StepDefinition.DisplaySugestionSReviewSteps.userIsLoggedIntoOrangeHRM(DisplaySugestionSReviewSteps.java:13)
+	at ✽.the user is logged into OrangeHRM with valid credentials(classpath:features/DisplaySugestionSReview.feature:4)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:283:44)
+    at transport.onmessage (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\utils\pipeTransport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 13 more
+
+Termination confirmation when ending employee contract.User receives a confirmation message when terminating an employee -- Time elapsed: 0.007 s <<< ERROR!
+com.microsoft.playwright.impl.TargetClosedError: 
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:283:44)
+    at transport.onmessage (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\utils\pipeTransport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$47(PageImpl.java:943)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:943)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at pages.LoginPage.login(LoginPage.java:18)
+	at pages.DeletionEducationRecord.open(DeletionEducationRecord.java:17)
+	at StepDefinition.DeletionEducationRecordSteps.userIsLoggedIntoOrangeHRM(DeletionEducationRecordSteps.java:15)
+	at ✽.the user is logged into OrangeHRM(classpath:features/TerminationConfirmation.feature:4)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\dispatchers\dispatcher.js:283:44)
+    at transport.onmessage (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\cli\driver.js:52:57)
+    at Immediate._onImmediate (C:\Endava\ENDEVL~1\AppData\Local\Temp\playwright-java-13822793970080967420\package\lib\server\utils\pipeTransport.js:77:34)
+    at process.processImmediate (node:internal/timers:491:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:256)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 13 more
+
