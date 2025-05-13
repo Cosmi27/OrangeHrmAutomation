@@ -1,7 +1,6 @@
 package StepDefinition;
 
-import POM.DisplaySugestionSReview;
-import io.cucumber.java.en.And;
+import pages.DisplaySugestionSReview;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,35 +9,32 @@ public class DisplaySugestionSReviewSteps {
     DisplaySugestionSReview displaySugestionSReview = new DisplaySugestionSReview();
 
     @Given("the user is logged into OrangeHRM with valid credentials")
-    public void the_user_is_logged_into_OrangeHRM() {
+    public void userIsLoggedIntoOrangeHRM() {
         displaySugestionSReview.open();
-
     }
 
     @When("the user navigates to the Performance module")
-    public void the_user_navigates_to_the_Performance_module() {
-
+    public void navigateToThePerformanceModule() {
         displaySugestionSReview.navigatePerformanceModule();
     }
 
-    @And("clicks on Manage Reviews")
-    public void clicks_onManageReviews() {
+    @When("clicks on Manage Reviews")
+    public void clickOnManageReviews() {
         displaySugestionSReview.clickManageReviews();
     }
 
-    @And("the user clicks on the Supervisor Reviewer field")
-    public void user_clicks_on_theSupervisorReviewer_field() {
+    @When("the user clicks on the Supervisor Reviewer field")
+    public void clickOnTheSupervisorReviewerField() {
         displaySugestionSReview.clickManageReviewsField();
     }
 
-    @And("starts typing {}")
-    public void starts_typing_anyNameorLatter(String input) {
+    @When("starts typing {}")
+    public void startTypingAnyNameOrLatter(String input) {
         displaySugestionSReview.typeAnyName(input);
     }
 
     @Then("matching supervisor names are displayed as suggestions based on the user’s input in the Supervisor Reviewer field")
-    public void displayedSupervizor_names() {
+    public void displayedSupervisorNames() {
         displaySugestionSReview.verifySuggestionsDisplayed();
-
     }
 }

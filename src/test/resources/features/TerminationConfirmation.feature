@@ -9,5 +9,5 @@ Feature: Termination confirmation when ending employee contract
     And selects an employee from the list
     And the user navigate to the Job section and clicks on Terminate Employee
     And fills in the required termination fields
-    And clicks the [Save] button
+    And clicks the "Save" button
     Then a confirmation message is displayed before finalizing the termination
