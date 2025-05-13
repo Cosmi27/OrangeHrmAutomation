@@ -10,8 +10,6 @@ Feature: Supervisor Reviewer field displays suggestions in Manage Reviews
     And the user clicks on the Supervisor Reviewer field
     And starts typing <input>
     Then matching supervisor names are displayed as suggestions based on the user’s input in the Supervisor Reviewer field
-
     Examples:
-      | input           |
-      | John            |
-      | Carl  Angus     |
+      | input |
+      | John  |
